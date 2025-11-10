@@ -13,9 +13,8 @@ body {
 
 .hero {
   background-image: url('Smash.png');
-  background-size: cover;         /* Remplit toute la zone sans déformation */
-  background-position: center;    /* Centre l’image */
-  background-repeat: no-repeat;   /* Empêche la répétition */
+  background-size: cover;
+  background-position: center;
   height: 90vh;
   display: flex;
   align-items: center;
@@ -25,40 +24,6 @@ body {
   position: relative;
   padding: 0 1rem;
 }
-
-/* --- Ajustements pour mobile --- */
-@media (max-width: 768px) {
-  .hero {
-    background-position: top center; /* recadre l’image pour mieux afficher le haut */
-    height: 70vh; /* réduit un peu la hauteur pour éviter le scroll inutile */
-  }
-
-  .hero .overlay {
-    padding: 1.5rem;
-    border-radius: 6px;
-  }
-
-  .hero h1 {
-    font-size: 1.5rem; /* adapte la taille du texte */
-  }
-
-  .btn {
-    padding: 0.6rem 1rem;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    background-position: center top;
-    height: 60vh;
-  }
-
-  .hero h1 {
-    font-size: 1.2rem;
-  }
-}
-
 
 .hero .overlay {
   background: rgba(0, 0, 0, 0.4);
