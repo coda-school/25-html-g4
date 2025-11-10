@@ -7,7 +7,7 @@ Datez et nommez les décisions techniques significatives dans votre projet
 Expliquez le contexte amenant à cette décision.
 Les alternatives considérées ainsi que le choix retenu et les raisons pour lesquelles ce choix a été fait.
 
-Voici un premier exemple 👇
+Voici un premier exemple 👇 
 -->
 
 ## 01 - Déploiement du site statique sur Github pages
