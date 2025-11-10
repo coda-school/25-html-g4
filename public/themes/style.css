@@ -5,11 +5,11 @@ body{
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgb(133, 2, 89),rgb(255, 87, 249));
+    font-size: 3rem;
 }
 
 main{
     max-width: 700px;
-    align-items: center;
 }
 
 .Smash{
@@ -40,6 +40,8 @@ section > button {
     border-radius: 15px;
     border-style: none;
     margin-right: 1rem;
+    font-size: 2rem;
+    padding: 20px 30px;
     
     
     
