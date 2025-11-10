@@ -1,0 +1,35 @@
+.hero {
+  background-image: url('Smash.png');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #1f662b;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+}
