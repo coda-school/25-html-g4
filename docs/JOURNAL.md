@@ -16,6 +16,23 @@ Des exmples de code.
 
 ## Lundi 10 novembre
 
+
+Le groupe est composé de
+- Thomas
+- Axel
+- Hong-Zhong
+- Hugo C
+
+Nous avons proposé comme sujet "Smash or pass"
+
+Voici les fonctionnalités principales attendues : 
+- Un acceuil pour choisir un thème
+- Un smash or pass pour un thème choisi
+
+Répartition des rôles :
+- Axel & Hugo C s'occupe de l'acceuil
+- Thomas & Hong-Zhong
+
 <!--
 
 Le groupe est composé de
