@@ -1,5 +1,6 @@
 # Journal de projet
 
+
 <!-- 
 Notez tout ce qui est utile au fur et à mesure de votre progression sur le projet.
 
@@ -31,7 +32,7 @@ Voici les fonctionnalités principales attendues :
 
 Répartition des rôles :
 - Axel & Hugo C s'occupe de l'acceuil
-- Thomas & Hong-Zhong
+- Thomas & Hong-Zhong s'occupe du smash or pass
 
 <!--
 
