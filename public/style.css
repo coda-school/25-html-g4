@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #48007a;
+    color: #cb6ce6;
+}
+
+.hero {
+  background-image: url('Smash.png');
+  background-size: cover;         /* Remplit toute la zone sans déformation */
+  background-position: center;    /* Centre l’image */
+  background-repeat: no-repeat;   /* Empêche la répétition */
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 0 1rem;
+}
+
+/* --- Ajustements pour mobile --- */
+@media (max-width: 768px) {
+  .hero {
+    background-position: top center; /* recadre l’image pour mieux afficher le haut */
+    height: 70vh; /* réduit un peu la hauteur pour éviter le scroll inutile */
+  }
+
+  .hero .overlay {
+    padding: 1.5rem;
+    border-radius: 6px;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem; /* adapte la taille du texte */
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    background-position: center top;
+    height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 1.2rem;
+  }
+}
+
+
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #ff00ff;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: bold;
+  border: white solid 1px;
+  text-decoration: none;
+}
+/*size and bring titles 1 and 2 closer together on arrivée.html*/
+.title1 {
+    font-size: 1rem;
+}
+
+.title2 {
+    margin-top: 1px;
+    font-size: 1.5rem;
+}
+
+.title1 h1,
+.title2 h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
