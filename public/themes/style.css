@@ -12,6 +12,7 @@ main{
     max-width: 700px;
 }
 
+
 .Smash{
     color: white;
     background: linear-gradient(#d50505, #ec2ff0);
@@ -26,25 +27,21 @@ main{
     background: linear-gradient(#ccf20b, #2ff056);
 }
 
-section {
+.Card{
     text-align: center;
     background: linear-gradient(#d41ec4, #ef2b5c);
     padding-bottom: 30px;
     margin: auto;
     border-radius: 15px;
     border-width: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
 }
 
 section > button {
-    display: inline-block;
     border-radius: 15px;
     border-style: none;
-    margin-right: 1rem;
     font-size: 2rem;
     padding: 20px 30px;
-    
-    
-    
     
 }
 
