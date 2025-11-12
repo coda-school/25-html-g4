@@ -2,15 +2,9 @@ body{
     font-family: sans-serif;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgb(133, 2, 89),rgb(255, 87, 249));
     font-size: 3rem;
 }
 
-main{
-    max-width: 700px;
-}
 
 
 main input[type="radio"] {
@@ -33,15 +27,27 @@ main input[type="radio"] {
 }
 
 .Card{
+    position: absolute;
+    inset: 0;
     text-align: center;
     background: linear-gradient(#d41ec4, #ef2b5c);
     padding-bottom: 30px;
     margin: auto;
-    border-radius: 15px;
-    border-width: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    opacity:0; 
+    pointer-events:none;
     
 }
+
+
+.Cards{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    height: 480px;
+    overflow: hidden;
+}
+
+
 
 
 section > label {
@@ -75,10 +81,19 @@ section > label {
 }
 
 
-#c1:checked ~ .cards .Card:nth-child(1),
-#c2:checked ~ .cards .Card:nth-child(2),
-#c3:checked ~ .cards .Card:nth-child(3){
-    opacity: 1;
-    transform: scale(1);
-    pointer-events: auto;
+#c1:checked ~ .Cards .Card:nth-child(1),
+#c2:checked ~ .Cards .Card:nth-child(2),
+#c3:checked ~ .Cards .Card:nth-child(3), 
+#c4:checked ~ .Cards .Card:nth-child(4){
+        opacity: 1;
+        transform: scale(1);
+        pointer-events: auto;
+}
+
+
+@media (max-width: 500px) {
+    .Card{
+        
+    
+}
 }
