@@ -2,15 +2,9 @@ body{
     font-family: sans-serif;
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(rgb(133, 2, 89),rgb(255, 87, 249));
     font-size: 3rem;
 }
 
-main{
-    max-width: 700px;
-}
 
 
 main input[type="radio"] {
@@ -33,15 +27,27 @@ main input[type="radio"] {
 }
 
 .Card{
+    position: absolute;
+    inset: 0;
     text-align: center;
     background: linear-gradient(#d41ec4, #ef2b5c);
     padding-bottom: 30px;
     margin: auto;
-    border-radius: 15px;
-    border-width: 10px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    opacity:0; 
+    pointer-events:none;
     
 }
+
+
+.Cards{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    height: 480px;
+    overflow: hidden;
+}
+
+
 
 
 section > label {
@@ -75,74 +81,11 @@ section > label {
 }
 
 
-#c1:checked ~ .cards .Card:nth-child(1),
-#c2:checked ~ .cards .Card:nth-child(2),
-#c3:checked ~ .cards .Card:nth-child(3){
-    opacity: 1;
-    transform: scale(1);
-    pointer-events: auto;
-}
-
-/* Cache les contrôles radio */
-.jeu-smash-pass input {
-    display: none;
-}
-
-/* 🧱 Conteneur pour empiler les cartes */
-.jeu-smash-pass {
-    position: relative;
-    width: 300px; /* Taille de vos cartes */
-    height: 450px;
-    margin: 50px auto;
-}
-
-/* 🃏 Styles de base pour toutes les cartes */
-.carte {
-    /* Place toutes les cartes au même endroit, les empilant */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    
-    /* Par défaut, la carte est invisible et hors écran (à droite) */
-    opacity: 0;
-    transform: translateX(100%);
-    
-    /* ⏱️ LA CLÉ : Ajouter la transition pour un mouvement fluide */
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-/* 🎯 Lorsque le contrôle est checked, ON AFFICHE LA CARTE CORRESPONDANTE */
-
-/* Afficher la Carte 1 (au début) */
-#carte-1:checked ~ #show-carte-1 {
-    opacity: 1; /* Rendre visible */
-    transform: translateX(0); /* Ramener au centre */
-}
-#carte-2:checked ~ #show-carte-2 {
-    opacity: 1;
-    transform: translateX(0);
-}
-#carte-3:checked ~ #show-carte-3 {
-    opacity: 1;
-    transform: translateX(0);
-}
-#carte-4:checked ~ #show-carte-4 {
-    opacity: 1;
-    transform: translateX(0);
-}
-/* Répétez ce bloc pour chaque carte (Carte 3, Carte 4, etc.) */
-
-/* 🖼️ Styles d'image et boutons (ajustez selon vos besoins) */
-.carte img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.bouton-action {
-    display: inline-block;
-    cursor: pointer;
-    padding: 10px 20px;
+#c1:checked ~ .Cards .Card:nth-child(1),
+#c2:checked ~ .Cards .Card:nth-child(2),
+#c3:checked ~ .Cards .Card:nth-child(3), 
+#c4:checked ~ .Cards .Card:nth-child(4){
+        opacity: 1;
+        transform: scale(1);
+        pointer-events: auto;
 }
