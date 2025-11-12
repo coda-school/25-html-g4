@@ -14,17 +14,44 @@ body {
 }
 
 .hero {
-  background-image: url('Smash.png');
-  background-size: cover;
-  background-position: center;
-  height: 90vh;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
-  position: relative;
-  padding: 0 1rem;
+}
+
+/* Vidéo plein écran */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.background2{
+  background-image: url('Smash2.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero .overlay {
@@ -67,3 +94,76 @@ body {
     line-height: 1;
 }
 
+
+
+  .navbar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid #dddddd00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  .nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  /* --- Liens de navigation --- */
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  /* --- Responsive : bouton burger --- */
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  /* --- MOBILE --- */
+  @media (max-width: 700px) {
+    .menu-icon {
+      display: block;
+    }
+
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0);
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      display: none;
+      padding: 1rem 0;
+      border-top: 1px solid #ddd;
+    }
+
+    #menu-toggle:checked + .menu-icon + .nav-links {
+      display: flex;
+    }
+  }

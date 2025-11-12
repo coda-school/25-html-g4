@@ -8,32 +8,43 @@
   </head>
   <body>
 
-      <!-- NAVBAR -->
-  <nav class="navbar transparent" id="mainNav" role="navigation" aria-label="Main navigation">
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
       <a href="#" class="logo">Smash & Pass</a>
-      <button class="nav-toggle" id="navToggle" aria-controls="navLinks" aria-expanded="false" aria-label="Ouvrir le menu">
-       
-        <!-- MENU HAMBURGER -->
-        <span class="hamburger"><span></span><span></span><span></span></span>
-      </button>
 
-      <div class="nav-links" id="navLinks">
+      <!-- Checkbox + icône burger -->
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">☰</label>
+
+      <div class="nav-links">
         <a href="#hero" class="nav-link">Accueil</a>
-        <a href="#themes" class="btn nav-cta">Les thèmes</a>
+        <a href="#themes" class="nav-link">Les thèmes</a>
       </div>
     </div>
   </nav>
 
-  <!-- HEADER -->
-      <header class="hero">
-    <div class="overlay">
-      <h1>Smash & Pass</h1>
-      <a href="themes/choixthemes.html" class="btn">Les thèmes</a>
-    </div>
-  </header>
+<!-- HEADER -->
+<header class="hero">
+  <!-- 🎬 Vidéo d’arrière-plan -->
+  <video autoplay muted loop playsinline class="bg-video" poster="Smash.png">
+    <source src="1112.mp4" type="video/mp4">
+    Ton navigateur ne supporte pas la vidéo.
+  </video>
+
+  <!-- 🕶️ Contenu au premier plan -->
+  <div class="overlay">
+    <h1>Smash & Pass</h1>
+    <a href="themes/choixthemes.html" class="btn">Les thèmes</a>
+  </div>
+</header>
+
   <section>
     <h2>Bienvenue sur Smash & Pass</h2>
+    <p>Le seul endroit où ton jugement risque de t'emmener en prison...</p>
+    <p>tu juges, tu cliques, tu assumes. <br>
+    <strong>Smash</strong> si ça te plaît, <strong>Pass</strong> si c’est non merci.  c:\Users\utilisateur\Downloads\1112.mp4
+    Des thèmes variés, des choix parfois douteux, et surtout, beaucoup de fun.</p>
   </section>
   </body>
 </html>
