@@ -198,7 +198,7 @@ body {
 .slide-track {
     display: flex;
     width: calc(200px * 15);
-    animation: scroll 3s linear infinite;
+    animation: scroll 10s linear infinite;
 }
 .slide-track:hover {
     animation-play-state: paused;
