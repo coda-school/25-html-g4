@@ -1,91 +1,114 @@
-body{
-    font-family: sans-serif;
-    color: white;
-    display: flex;
-    font-size: 3rem;
+/* Corps */
+body {
+  margin: 0;
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+  background: linear-gradient(#d41ec4, #ef2b5c);
+  font-size: clamp(18px, 3rem, 48px);
+  overflow: hidden;
 }
 
-
-
-main input[type="radio"] {
+/* Enleve les checkbox */
+main input[type="radio"]{
     display: none;
 }
 
-
-.Smash{
-    color: white;
-    background: linear-gradient(#d50505, #ec2ff0);
-
-}
-.Maybe{
-    color: white;
-    background: linear-gradient(#f6c616, #d3d60c);
-}
-.Pass{
-    color: white;
-    background: linear-gradient(#ccf20b, #2ff056);
+/* Ensemble des cartes */
+.Cards {
+  position: relative;
+  width: min(94vw, 700px);
+  height: clamp(420px, 70svh, 780px);
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.Card{
-    position: absolute;
-    inset: 0;
-    text-align: center;
-    background: linear-gradient(#d41ec4, #ef2b5c);
-    padding-bottom: 30px;
-    margin: auto;
-    opacity:0; 
-    pointer-events:none;
-    
+/* Cartes */
+.Card {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  place-items: center; 
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.95);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  padding: clamp(12px, 2vw, 24px);
 }
 
-
-.Cards{
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
-    height: 480px;
-    overflow: hidden;
+/* Image responsive */
+.Card img {
+  width: min(80vw, 260px);
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  display: block;
+  margin-bottom: clamp(10px, 2vw, 16px);
 }
 
-
-
-
+/* Boutons responsive */
 section > label {
-    border-radius: 15px;
-    border-style: none;
-    font-size: 2rem;
-    padding: 20px 30px;
-    
+  border: none;
+  border-radius: 15px;
+  font-size: clamp(16px, 4vw, 24px);
+  padding: clamp(12px, 2.2vw, 20px) clamp(16px, 3vw, 30px);
+  margin: 0.35rem 0.35rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
+/* Couleur boutons */
+.Smash {
+  color: #fff;
+  background: linear-gradient(#d50505, #ec2ff0);
+}
+.Maybe {
+  color: #fff;
+  background: linear-gradient(#f6c616, #d3d60c);
+}
+.Pass {
+  color: #fff;
+  background: linear-gradient(#ccf20b, #2ff056);
+}
 .Smash:hover {
-    color: rgb(255, 255, 255); 
-    background-color:green; 
-    border-color: green; 
-    cursor: pointer;
-    transform: scale(1.2); 
+  background-color: green;
+  transform: scale(1.08);
 }
 .Maybe:hover {
-    color: rgb(255, 255, 255); 
-    background-color: orange; 
-    border-color: orange; 
-    cursor: pointer; 
-    transform: scale(1.2);
+  background-color: orange;
+  transform: scale(1.08);
 }
 .Pass:hover {
-    color: rgb(255, 255, 255); 
-    background-color: red; 
-    border-color: red; 
-    cursor: pointer;
-    transform: scale(1.2); 
+  background-color: red;
+  transform: scale(1.08);
 }
 
-
+/* Affichage conditionnel */
 #c1:checked ~ .Cards .Card:nth-child(1),
 #c2:checked ~ .Cards .Card:nth-child(2),
-#c3:checked ~ .Cards .Card:nth-child(3), 
-#c4:checked ~ .Cards .Card:nth-child(4){
-        opacity: 1;
-        transform: scale(1);
-        pointer-events: auto;
+#c3:checked ~ .Cards .Card:nth-child(3),
+#c4:checked ~ .Cards .Card:nth-child(4) {
+  opacity: 1;
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+@media (max-width: 600px) {
+  .Cards {
+    width: 92vw;
+    height: clamp(420px, 72svh, 680px);
+  }
+  .Card img {
+    width: min(86vw, 280px);
+  }
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
