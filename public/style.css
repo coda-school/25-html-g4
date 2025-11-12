@@ -14,15 +14,33 @@ body {
 }
 
 .hero {
-  position: relative;
+  background-size: cover;
+  background-position: center;
   height: 100vh;
-  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+  position: relative;
+  padding: 0 1rem;
 }
+
+.hero1 {
+  background-image: url('Images/Smash2.png');
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  padding: 0 1rem;
+}
+
+
 
 /* Vidéo plein écran */
 .bg-video {
@@ -167,3 +185,50 @@ body {
       display: flex;
     }
   }
+
+  .slider {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 200px;
+    z-index: 2;
+}
+.slide-track {
+    display: flex;
+    width: calc(200px * 15);
+    animation: scroll 3s linear infinite;
+}
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-200px * 7.5)); }
+}
+
+
+.slide {
+    width: 130px;
+    height: 230px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: transparent;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0.5em;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+}
