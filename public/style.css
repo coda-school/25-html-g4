@@ -73,7 +73,6 @@ h2 {
 
 
 .background2{
-  background-image: url('Smash2.png');
   background-size: cover;
   background-position: center;
 }
@@ -92,7 +91,7 @@ h2 {
 }
 
 .btn {
-  background-color: #ff00ff;
+  background-color: #9b179b;
   color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
@@ -236,7 +235,6 @@ img {
 }
 img:hover {
     transform: scale(1.1);
-    box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
 }
 
 /* mon petit jojo */
