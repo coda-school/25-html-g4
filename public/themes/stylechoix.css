@@ -1,0 +1,51 @@
+body {
+    background-color: #3b1e60;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+.hero3 {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.corp{
+    align-items: center;
+    margin: 2px;
+    background-color: #2ff056;
+    width: 500px;
+    height: 500px;
+    overflow: auto;
+
+}
+
+.case{
+    float: left;
+    height: 200px;
+    width: 200px;
+    word-wrap: break-word;
+    box-shadow: 0 0 3px;
+}
+
+.btn {
+    background-color: #ff00ff;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    border: white solid 1px;
+    text-decoration: none;
+}
