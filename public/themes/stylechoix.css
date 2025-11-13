@@ -30,12 +30,13 @@
     width: 200px;
     padding: 10px;
     text-align: center;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(59, 30, 96, 0.2);
     transition: transform 0.2s ease;
 }
 
 .cadre:hover{
     transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(59, 30, 96, 0.2);
 }
 
 .cadre img{
@@ -46,7 +47,7 @@
 }
 
 .cadre .btn {
-    background-color: #ff00ff;
+    background: linear-gradient(#ff00ff, #7a4ebf);
     color: white;
     padding: 0.8rem 1.5rem;
     border-radius: 5px;
