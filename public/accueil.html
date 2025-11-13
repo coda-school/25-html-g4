@@ -3,91 +3,110 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO -->
     <meta name="description" content="Smash OR Pass — Juge les personnages et amuse-toi avec des thèmes variés et plein d'humour !">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Moi, Hugo">
-    <link rel = "stylesheet" href = "style.css">
-    <link rel="icon" type="image/png" href="Images/bob.png" />
-    <title>page d'accueil</title>
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Équipe Smash OR Pass – Coda School">
+    <meta property="og:title" content="Smash OR Pass">
+    <meta property="og:description" content="Le jeu où tu juges, tu cliques, tu assumes !">
+    <meta property="og:image" content="Images/preview.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tonsite.fr">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/bob.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/bob.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/bob.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Smash OR Pass - Page d'accueil</title>
   </head>
+
   <body>
 
-  <!-- barre de navigation -->
-  <nav class="navbar" role="navigation" aria-label="Main navigation">
-    <div class="nav-inner">
-      <a href="#" class="logo">Smash OR Pass</a>
+    <!-- barre de navigation -->
+    <nav class="navbar" role="navigation" aria-label="Navigation principale">
+      <div class="nav-inner">
+        <a href="#" class="logo">Smash OR Pass</a>
 
-      <!-- Checkbox + icône burger -->
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">☰</label>
+        <!-- Checkbox + icône burger -->
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">☰</label>
 
-      <div class="nav-links">
-        <a href="index.html" class="nav-link">Accueil</a>
-        <a href="themes/choixthemes.html" class="nav-link">Les thèmes</a>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <a href="themes/choixthemes.html" class="nav-link">Les thèmes</a>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-<!-- Header -->
-<header class="hero">
-  <!-- Vidéo d’arrière plan -->
-  <video autoplay muted loop playsinline class="bg-video" poster="Images/11121.mp4">
-    <source src="Images/11121.mp4" type="video/mp4">
-    Ton navigateur ne supporte pas la vidéo.
-  </video>
+    <!-- Header -->
+    <header class="hero">
+      <!-- Vidéo d’arrière plan -->
+      <video autoplay muted loop playsinline class="bg-video" poster="Images/11121.webp" preload="none">
+        <source src="Images/11121.mp4" type="video/mp4">
+        Ton navigateur ne supporte pas la vidéo.
+      </video>
 
-  <!-- 🕶️ Contenu au premier plan -->
-  <div class="overlay">
-    <h1>Smash OR Pass</h1>
-    <a href="themes/choixthemes.html" class="btn">Les thèmes</a>
-  </div>
-</header>
+      <!-- Contenu au premier plan -->
+      <div class="overlay">
+        <h1>Smash OR Pass</h1>
+        <a href="themes/choixthemes.html" class="btn">Les thèmes</a>
+      </div>
+    </header>
 
-<!-- Accueil -->
-<section>
-  <h2>Bienvenue sur Smash OR Pass</h2>
-  <div class="jojo">
-    <img src="Images/joshua.png" alt="Joshua" class="jojo__img">
-    <div class="jojo__text">
-      <p>Le seul endroit où ton jugement risque de t'emmener en prison...</p>
-      <p>
-        Tu juges, tu cliques, tu assumes. <br>
-        <strong>Smash</strong> si ça te plaît, <strong>Pass</strong> si c’est non merci. 
-        ATTENTION ! Si tu penses être observé tu peux mettre <strong>maybe..</strong><br>
-        Des thèmes variés, des choix parfois douteux, et surtout, beaucoup de fun.
-      </p>
-    </div>
-  </div>
-</section>
+    <!-- Accueil -->
+    <section>
+      <h2>Bienvenue sur Smash OR Pass</h2>
+      <div class="jojo">
+        <img src="Images/joshua.png" alt="Portrait de Joshua" class="jojo__img" width="250" height="250">
+        <div class="jojo__text">
+          <p>Le seul endroit où ton jugement risque de t'emmener en prison...</p>
+          <p>
+            Tu juges, tu cliques, tu assumes. <br>
+            <strong>Smash</strong> si ça te plaît, <strong>Pass</strong> si c’est non merci. 
+            ATTENTION ! Si tu penses être observé tu peux mettre <strong>maybe..</strong><br>
+            Des thèmes variés, des choix parfois douteux, et surtout, beaucoup de fun.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<!-- escaliers -->
-<section class="staircase">
-  <h2>Comment faire pour lancer !</h2>
-  <div class="staircase-images">
-    <div>
-      <img src="Images/brad pitt.png" alt="Image 1">
-      <p><strong>1.</strong> Remonte en haut de cette page !</p>
-    </div>
-    <div>
-      <img src="Images/bob.png" alt="Image 2">
-      <p><strong>2.</strong> Clique sur les thèmes !</p>
-    </div>
-    <div>
-      <img src="Images/hulk.png" alt="Image 3">
-      <p><strong>3.</strong> Choisi ton thème !</p>
-    </div>
-    <div>
-      <img src="Images/batman.png" alt="Image 4">
-      <p><strong>4.</strong> Et amuse toi !!</p>
-    </div>
-  </div>
-</section>
+    <!-- escaliers -->
+    <section class="staircase">
+      <h2>Comment faire pour lancer !</h2>
+      <div class="staircase-images">
+        <div>
+          <img src="Images/brad pitt.png" alt="Brad Pitt" width="250" height="250" loading="lazy">
+          <p><strong>1.</strong> Remonte en haut de cette page !</p>
+        </div>
+        <div>
+          <img src="Images/bob.png" alt="Bob" width="250" height="250" loading="lazy">
+          <p><strong>2.</strong> Clique sur les thèmes !</p>
+        </div>
+        <div>
+          <img src="Images/hulk.png" alt="Hulk" width="250" height="250" loading="lazy">
+          <p><strong>3.</strong> Choisi ton thème !</p>
+        </div>
+        <div>
+          <img src="Images/batman.png" alt="Batman" width="250" height="250" loading="lazy">
+          <p><strong>4.</strong> Et amuse toi !!</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <a href="https://github.com/coda-school/25-html-g4"><img src="https://img.icons8.com/?size=100&id=12598&format=png&color=FFFFFF"></a>
-    <a href="https://coda-school.github.io/speedlify-dijon-b1-2025/25-html-g4/"><img src="https://img.icons8.com/?size=100&id=12598&format=png&color=FFFFFF"></a>
-    <p>© 2025 Smash and Pass – Tous droits réservés.</p>
-  </footer>
+    <!-- Footer -->
+    <footer>
+      <a href="https://github.com/coda-school/25-html-g4" aria-label="Voir le projet sur GitHub">
+        <img src="https://img.icons8.com/?size=100&id=12598&format=png&color=FFFFFF" alt="Icône GitHub">
+      </a>
+      <a href="https://coda-school.github.io/speedlify-dijon-b1-2025/25-html-g4/" aria-label="Voir les performances du site">
+        <img src="https://img.icons8.com/?size=100&id=41152&format=png&color=FFFFFF" alt="Icône speedlify">
+      </a>
+      <p>© 2025 Smash and Pass – Tous droits réservés.</p>
+    </footer>
+
   </body>
 </html>
