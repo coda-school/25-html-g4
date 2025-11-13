@@ -168,7 +168,7 @@ h2 {
   }
 
   /* --- MOBILE --- */
-  @media (max-width: 700px) {
+  @media (max-width: 512px) {
     .menu-icon {
       display: block;
     }
@@ -343,9 +343,8 @@ footer img {
   transform: scale(1.05);
 }
 
-/* ===================== */
-/*       RESPONSIVE      */
-/* ===================== */
+
+/* Responsive */
 @media (max-width: 1024px) {
   .staircase {
     margin: 40px 20px;
