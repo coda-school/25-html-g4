@@ -7,10 +7,11 @@
 }
 
 body {
-    background-color: #48007a;
+    background-color: #3b1e60;
     color: #cb6ce6;
     justify-content: center;
     align-items: center;
+    font-family: "Poppins", sans-serif;
 }
 
 .hero {
@@ -40,6 +41,11 @@ body {
   padding: 0 1rem;
 }
 
+h2 {
+  text-align: center;
+  margin-top: 5%;
+  color: white;
+}
 
 
 /* Vidéo plein écran */
@@ -113,7 +119,7 @@ body {
 }
 
 
-
+/* barre de nav */
   .navbar {
     width: 100%;
     background: rgba(255, 255, 255, 0);
@@ -231,4 +237,142 @@ img {
 img:hover {
     transform: scale(1.1);
     box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+}
+
+/* mon petit jojo */
+.jojo {
+  display: flex;
+  align-items: center; 
+  gap: 20px;          
+  margin-top: 16px;
+}
+
+.jojo__img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.jojo__text {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive : image au-dessus sur mobile */
+@media (max-width: 600px) {
+  .jojo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .jojo__img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #cb6ce6;
+  color: #fff;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+/* Section générale */
+.staircase {
+  text-align: center;
+  margin: 60px;
+}
+
+.staircase h2 {
+  margin-bottom: 40px;
+}
+
+/* Conteneur d'images */
+.staircase-images {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+/* Chaque bloc image + texte */
+.staircase-images div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Images */
+.staircase-images img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Texte sous l'image */
+.staircase-images p {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #cb6ce6;
+  font-weight: 500;
+}
+
+/* Effet escalier */
+.staircase-images div:nth-child(1) { margin-top: 80px; }
+.staircase-images div:nth-child(2) { margin-top: 120px; }
+.staircase-images div:nth-child(3) { margin-top: 160px; }
+.staircase-images div:nth-child(4) { margin-top: 200px; }
+
+/* Effet au survol */
+.staircase-images img:hover {
+  transform: scale(1.05);
+}
+
+/* ===================== */
+/*       RESPONSIVE      */
+/* ===================== */
+@media (max-width: 1024px) {
+  .staircase {
+    margin: 40px 20px;
+  }
+
+  .staircase-images {
+    gap: 30px;
+  }
+
+  .staircase-images img {
+    width: 200px;
+  }
+
+  .staircase-images div:nth-child(1) { margin-top: 40px; }
+  .staircase-images div:nth-child(2) { margin-top: 60px; }
+  .staircase-images div:nth-child(3) { margin-top: 80px; }
+  .staircase-images div:nth-child(4) { margin-top: 100px; }
+}
+
+/* Mobiles */
+@media (max-width: 700px) {
+  .staircase-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .staircase-images div {
+    margin-top: 0;
+  }
+
+  .staircase-images img {
+    width: 90%;
+    max-width: 320px;
+  }
 }
