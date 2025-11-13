@@ -9,7 +9,6 @@ body {
   font-family: sans-serif;
   background: linear-gradient(#d41ec4, #ef2b5c);
   font-size: clamp(18px, 3rem, 48px);
-  overflow: hidden;
 }
 
 /* Enleve les checkbox */
@@ -23,7 +22,6 @@ main input[type="radio"]{
   width: min(94vw, 700px);
   height: clamp(420px, 70svh, 780px);
   margin: 0 auto;
-  overflow: hidden;
 }
 
 /* Cartes */
@@ -37,14 +35,12 @@ main input[type="radio"]{
   pointer-events: none;
   transform: scale(0.95);
   transition: opacity 0.25s ease, transform 0.25s ease;
-  padding: clamp(12px, 2vw, 24px);
 }
 
 /* Image responsive */
 .Card img {
-  width: min(80vw, 260px);
-  max-width: 100%;
-  height: auto;
+  width: min(40vw, 260px);
+  max-height: 40svh; 
   border-radius: 16px;
   border: 3px solid rgba(255, 255, 255, 0.8);
   display: block;
@@ -99,14 +95,21 @@ section > label {
 }
 
 @media (max-width: 600px) {
+    body{
+    font-size: clamp(18px, 2rem, 48px);
+    }
   .Cards {
     width: 92vw;
     height: clamp(420px, 72svh, 680px);
   }
   .Card img {
-    width: min(86vw, 280px);
+    width: min(40vw, 280px);
+    max-height: min(40vh, 480px);
+    
   }
 }
+
+
 
 a{
     text-decoration: none;

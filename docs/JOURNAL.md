@@ -34,6 +34,16 @@ Répartition des rôles :
 - Axel & Hugo C s'occupe de l'acceuil
 - Thomas & Hong-Zhong s'occupe du smash or pass
 
+
+## Mercredi 12 novembre
+
+Répartition des rôles :
+- Thomas s'occupe de la responsivité des cartes et la fonctionnalité pour que les cartes défilent au fur à mesure
+- Hong-Zhong s'occupe de la création du thèmes anime et des acteurs
+- Axel s'occupe de la créatino de l'exemple déroulant sur la page index
+- Hugo C s'occupe de toute la page acceuil
+
+
 <!--
 
 Le groupe est composé de

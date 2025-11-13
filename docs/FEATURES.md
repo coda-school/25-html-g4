@@ -1,6 +1,7 @@
 # Fonctionnalités
 
-Tout au long du projet, documenter ici les fonctionnalités spécifiques de votre site.
+Permet de Smash or Pass nos anime, acteurs et pokemon préfèré
+Avec un acceuil animé et une séléction de nos thèmes
 
 
 
