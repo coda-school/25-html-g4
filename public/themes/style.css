@@ -11,6 +11,11 @@ body {
   font-size: clamp(18px, 3rem, 48px);
 }
 
+figure {
+  margin: 0;         
+  text-align: center; 
+}
+
 /* Enleve les checkbox */
 main input[type="radio"]{
     display: none;
@@ -39,6 +44,8 @@ main input[type="radio"]{
 
 /* Image responsive */
 .Card img {
+  display: block;      
+  margin: 0 auto 1rem;
   width: min(40vw, 260px);
   max-height: 40svh; 
   border-radius: 16px;
@@ -46,6 +53,7 @@ main input[type="radio"]{
   display: block;
   margin-bottom: clamp(10px, 2vw, 16px);
 }
+
 
 /* Boutons responsive */
 section > label {
