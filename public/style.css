@@ -33,7 +33,6 @@ body {
 }
 
 .hero1 {
-  background-image: url('Images/Smash2.png');
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -85,7 +84,6 @@ h2 {
 
 
 .background2{
-  background-image: url('Smash2.png');
   background-size: cover;
   background-position: center;
 }
@@ -215,14 +213,12 @@ h2 {
     }
   }
 
-  .slider {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    height: 200px;
-    z-index: 2;
+.slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto 0; /* au lieu de top + transform */
+    z-index: 1;          /* il passe SOUS l’overlay */
 }
 .slide-track {
     display: flex;
@@ -259,7 +255,7 @@ img {
 }
 img:hover {
     transform: scale(1.1);
-    box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+    box-shadow: 0 0.5rem 1rem -0.25rem var();
 }
 
 /* mon petit jojo */
