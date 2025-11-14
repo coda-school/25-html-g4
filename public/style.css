@@ -29,7 +29,6 @@ body {
 }
 
 .hero1 {
-  background-image: url('Images/Smash2.png');
   background-size: cover;
   background-position: center;
   height: 90vh;
@@ -81,7 +80,6 @@ h2 {
 
 
 .background2{
-  background-image: url('Smash2.png');
   background-size: cover;
   background-position: center;
 }
@@ -200,14 +198,12 @@ h2 {
     }
   }
 
-  .slider {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    height: 200px;
-    z-index: 2;
+.slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto 0; /* au lieu de top + transform */
+    z-index: 1;          /* il passe SOUS l’overlay */
 }
 .slide-track {
     display: flex;
@@ -244,7 +240,7 @@ img {
 }
 img:hover {
     transform: scale(1.1);
-    box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+    box-shadow: 0 0.5rem 1rem -0.25rem var();
 }
 
 /* mon petit jojo */
@@ -388,64 +384,4 @@ footer img {
     width: 90%;
     max-width: 320px;
   }
-}
-
-/* Contact */
-.contact-section {
-  margin: 60px auto;
-  padding: 30px 20px;
-  max-width: 700px;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 12px;
-  color: white;
-  text-align: center;
-}
-
-.contact-section h2 {
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form label {
-  text-align: left;
-  font-weight: 600;
-  color: #cb6ce6;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border: 2px solid #cb6ce6;
-  border-radius: 8px;
-  background-color: #3b1e60;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #cfa0e8;
-}
-
-.contact-btn {
-  background-color: #ff00ff;
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s ease;
-  border: 1px solid white;
-}
-
-.contact-btn:hover {
-  transform: scale(1.05);
 }
