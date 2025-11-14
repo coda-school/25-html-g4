@@ -1,10 +1,10 @@
 :root{
-  --color-bg: linear-gradient(#751e95);
+  --color-bg: #751e95;
 }
 
 @media (prefers-color-scheme: dark){  
   :root{
-    --color-bg: linear-gradient(#42098dee);
+    --color-bg: #42098dee;
   }
 }
 
