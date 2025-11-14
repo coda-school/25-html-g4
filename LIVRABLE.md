@@ -81,8 +81,19 @@ Elles doivent être reportées ci-dessous.
 
 ### Exigence 1
 
+Navigation sticky et burger menu pour mobile sans javascript
+
 ### Exigence 2
 
+Challenge Lighthouse 100 - 100 - 100 - 100
+
+### Exigence 3
+
+Version bilingue	
+
+### Exigence 4
+
+Formulaire de contact avec style
 
 ## Rendu attendu
 
