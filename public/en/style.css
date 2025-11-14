@@ -66,13 +66,6 @@ h2 {
   z-index: 1;
 }
 
-.overlay img{
-  display: block;      
-  margin: 0 auto 1rem;
-  width: min(40vw, 260px);
-  max-height: 5svh; 
-}
-
 .hero h1 {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -80,6 +73,7 @@ h2 {
 
 
 .background2{
+  background-image: url('Smash2.png');
   background-size: cover;
   background-position: center;
 }
@@ -98,7 +92,7 @@ h2 {
 }
 
 .btn {
-  background-color: #9b179b;
+  background-color: #ff00ff;
   color: white;
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
@@ -174,7 +168,7 @@ h2 {
   }
 
   /* --- MOBILE --- */
-  @media (max-width: 512px) {
+  @media (max-width: 700px) {
     .menu-icon {
       display: block;
     }
@@ -242,6 +236,7 @@ img {
 }
 img:hover {
     transform: scale(1.1);
+    box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
 }
 
 /* mon petit jojo */
@@ -348,8 +343,9 @@ footer img {
   transform: scale(1.05);
 }
 
-
-/* Responsive */
+/* ===================== */
+/*       RESPONSIVE      */
+/* ===================== */
 @media (max-width: 1024px) {
   .staircase {
     margin: 40px 20px;
