@@ -2,116 +2,133 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.header{
-    display: grid;
-    color: #f9f9ff;
-    text-align: center;
-    padding: 0;
-    font-size: 1.5em;
-    letter-spacing: 1px;
-    position: relative;
+/* === BODY === */
+body {
+    background: #3b1e60; 
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
 }
 
-.content{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    padding: 30px;
-    background-color: #f3e6ff;
-    justify-items: center;
-}
-
-.cadre{
-    border: 2px solid #ffffff;
-    border-radius: 8px;
-    background-color: white;
-    width: 200px;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 4px 15px rgba(59, 30, 96, 0.2);
-    transition: transform 0.2s ease;
-}
-
-.cadre:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(59, 30, 96, 0.2);
-}
-
-.cadre img{
+/* === HEADER === */
+.header {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    text-align: center;
+    padding: 2rem 1rem;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    margin-bottom: 2rem;
 }
 
-.cadre .btn {
-    background: linear-gradient(#ff00ff, #7a4ebf);
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    display: inline-block;
-    font-weight: bold;
-    border: white solid 1px;
-    text-decoration: none;
-    transition: background 0.2s ease;
+.header h1 {
+    font-size: 2rem;
+    color: #ffb7ff;
+    text-shadow: 0 0 8px #cb6ce6;
 }
 
-.cadre.btn:hover{
-    background-color: #2ff056;
-}
-
-.back-btn{
+/* Bouton retour */
+.back-btn {
     position: absolute;
     top: 15px;
     left: 20px;
     text-decoration: none;
-    background: linear-gradient(#ff00ff, #7a4ebf);
-    color: white;
-    padding: 8px 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 0.5rem 1rem;
     border-radius: 6px;
     font-weight: bold;
     font-size: 0.9em;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.back-btn:hover{
+.back-btn:hover {
     opacity: 0.85;
     transform: scale(1.05);
 }
 
-@media (max-width: 700px) {
-    .header {
-        flex-direction: column;
-        padding: 15px;
-    }
+/* === MAIN CONTENT GRID === */
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    justify-items: center;
+}
 
+/* === CARTE === */
+.cadre {
+    border-radius: 12px;
+    background: rgba(0,0,0,0.5);
+    width: 220px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(59, 30, 96, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cadre:hover {
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(203, 108, 230, 0.6);
+}
+
+/* === IMAGE === */
+.cadre img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cadre img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(203, 108, 230, 0.7);
+}
+
+/* === BOUTONS === */
+.cadre .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff00ff, #7a4ebf);
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+}
+
+.cadre .btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 4px 15px rgba(203, 108, 230, 0.6);
+    background: linear-gradient(135deg, #7a4ebf, #ff00ff);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 700px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
     .back-btn {
         position: static;
-        margin-bottom: 10px;
+        margin-bottom: 1rem;
     }
-
-    .header h1 {
-        font-size: 1.2em;
-        text-align: center;
-    }
-
     .content {
         grid-template-columns: 1fr;
-        padding: 20px;
+        padding: 1rem;
     }
-
     .cadre {
-        width: 100%;
+        width: 90%;
         max-width: 300px;
     }
 }
-
-body {
-    background: var(--color-bg);
-    justify-content: center;
-    align-items: center;
-}
-

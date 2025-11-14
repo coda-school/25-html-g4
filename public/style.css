@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background: var(--color-bg);
     color: #cb6ce6;
@@ -147,11 +151,22 @@ h2 {
     margin: 0 auto;
   }
 
-  .logo {
-    font-weight: bold;
-    text-decoration: none;
-    color: #ffffff;
-  }
+/* --- Logo --- */
+.logo {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.5); 
+  border-radius: 8px;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.logo:hover {
+  background: rgba(0, 0, 0, 0.7); 
+  transform: scale(1.05);       
+}
 
   /* --- Liens de navigation --- */
   .nav-links {
@@ -449,3 +464,5 @@ footer img {
 .contact-btn:hover {
   transform: scale(1.05);
 }
+
+
