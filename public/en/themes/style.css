@@ -43,7 +43,8 @@ main input[type="radio"]{
 }
 
 /* Image responsive */
-.Card img {     
+.Card img {
+  display: block;      
   margin: 0 auto 1rem;
   width: min(40vw, 260px);
   max-height: 40svh; 
