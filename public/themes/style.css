@@ -14,7 +14,7 @@ body {
   align-items: center;
   color: white;
   font-family: sans-serif;
-  background: linear-gradient(#d41ec4, #ef2b5c);
+  background: var(--color-bg);
   font-size: clamp(18px, 3rem, 48px);
 }
 

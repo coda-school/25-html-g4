@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: #3b1e60;
+    background: var(--color-bg);
     color: #cb6ce6;
     justify-content: center;
     align-items: center;
