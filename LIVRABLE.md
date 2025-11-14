@@ -81,8 +81,23 @@ Elles doivent être reportées ci-dessous.
 
 ### Exigence 1
 
+Navigation sticky et burger menu pour mobile sans javascript
+
 ### Exigence 2
 
+Challenge Lighthouse 100 - 100 - 100 - 100
+
+### Exigence 3
+
+Version bilingue	
+
+### Exigence 4
+
+Formulaire de contact avec style
+
+### Exigence 5
+
+Mode sombre/clair
 
 ## Rendu attendu
 
@@ -101,3 +116,24 @@ npx vite public
 # ou si la commande vite est installée globablement
 vite public
 ```
+
+## Validateurs
+
+
+* https://jigsaw.w3.org/css-validator/validator?profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr&uri=https://coda-school.github.io/25-html-g4/
+* https://jigsaw.w3.org/css-validator/validator?profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr&uri=https://coda-school.github.io/25-html-g4/accueil.html
+* https://jigsaw.w3.org/css-validator/validator?profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr&uri=https://coda-school.github.io/25-html-g4/themes/acteurs.html
+* https://jigsaw.w3.org/css-validator/validator?profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr&uri=https://coda-school.github.io/25-html-g4/themes/aie.html
+* https://jigsaw.w3.org/css-validator/validator?profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr&uri=https://coda-school.github.io/25-html-g4/themes/anime.html
+* https://jigsaw.w3.org/css-validator/validator?profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr&uri=https://coda-school.github.io/25-html-g4/themes/choixthemes.html
+* https://jigsaw.w3.org/css-validator/validator?profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr&uri=https://coda-school.github.io/25-html-g4/themes/pokemon.html
+
+
+* https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https://coda-school.github.io/25-html-g4/
+* https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https://coda-school.github.io/25-html-g4/accueil.html
+* https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https://coda-school.github.io/25-html-g4/themes/acteurs.html
+* https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https://coda-school.github.io/25-html-g4/themes/aie.html
+* https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https://coda-school.github.io/25-html-g4/themes/anime.html
+* https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https://coda-school.github.io/25-html-g4/themes/choixthemes.html
+* https://validator.w3.org/nu/?showsource=yes&showoutline=yes&showimagereport=yes&doc=https://coda-school.github.io/25-html-g4/themes/pokemon.html
+
