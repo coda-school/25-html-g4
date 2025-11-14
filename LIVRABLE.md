@@ -95,6 +95,10 @@ Version bilingue
 
 Formulaire de contact avec style
 
+### Exigence 5
+
+Mode sombre/clair
+
 ## Rendu attendu
 
 * Un **site web statique** dont le code source et les ressources se trouvent dans le dossier [`public`](public)
